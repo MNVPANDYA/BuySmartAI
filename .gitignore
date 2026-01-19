@@ -1,0 +1,38 @@
+# =========================
+# Global / OS
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# IDEs
+# =========================
+.idea/
+.vscode/
+*.iml
+
+# =========================
+# Backend (Spring Boot / Maven)
+# =========================
+SpringEcomAI/target/
+SpringEcomAI/*.log
+
+# =========================
+# Frontend (React / Node)
+# =========================
+t-ecom/node_modules/
+t-ecom/dist/
+t-ecom/build/
+t-ecom/.env
+t-ecom/.env.*
+# =========================
+# NPM / Yarn logs
+# =========================
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# =========================
+# Docker
+# =========================
+**/.dockerignore
