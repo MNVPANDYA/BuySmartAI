@@ -45,6 +45,7 @@ public class ChatBotService {
                     .variables(variables)
                     .build();
 
+
             return chatClient.prompt(promptTemplate.create()).call().content();
 
         }catch (IOException e){
@@ -54,12 +55,11 @@ public class ChatBotService {
     }
 
     private String fetchSemanticContext(String userQuery) {
-
         List<Document> documents = vectorStore.similaritySearch(
                 SearchRequest.builder()
                         .query(userQuery)
                         .topK(5)
-                        .similarityThreshold(0.7f)
+                        .similarityThreshold(0.6f)
                         .build()
         );
         StringBuilder context = new StringBuilder();
