@@ -1,11 +1,13 @@
 # 🛒 E-Commerce Product Management System
 
 ## 📘 Executive Summary
+
 The **E-Commerce Product Management System** is a robust full-stack backend solution developed to support modern online retail operations. It provides a comprehensive REST API for managing product data using a **Spring Boot** backend, designed to integrate seamlessly with a **React.js** frontend. The system emphasizes reliability, maintainability, and performance, making it suitable for scalable e-commerce applications.
 
 ---
 
 ## 📑 Table of Contents
+
 - [Project Objective](#project-objective)
 - [Features](#features)
   - [User Module](#user-module)
@@ -22,16 +24,20 @@ The **E-Commerce Product Management System** is a robust full-stack backend solu
 ---
 
 ## 🎯 Project Objective
+
 To develop and implement a high-performance **Product Management System** that serves as a foundational backend for e-commerce platforms. The system offers efficient handling of product information and digital assets through standardized, secure REST APIs.
 
 ---
 
 ## 🔧 Features
+
 ### User Module
+
 - Manage product creation, update, deletion.
 - Retrieve and display product details.
 
 ### Functional Features
+
 - Full product lifecycle management
 - Keyword-based search
 - Image upload and retrieval
@@ -40,32 +46,35 @@ To develop and implement a high-performance **Product Management System** that s
 ---
 
 ## 💡 Technologies Used
+
 | Component           | Technology                     |
-| -------------------| ------------------------------ |
-| Backend            | Spring Boot 3.3.3              |
-| ORM                | Spring Data JPA, Hibernate ORM |
-| Database           | PostgreSQL                     |
-| Frontend (optional)| React.js                       |
-| Build Tool         | Apache Maven                   |
-| Runtime            | Java 21                        |
-| Tools              | Project Lombok, Postman        |
+| ------------------- | ------------------------------ |
+| Backend             | Spring Boot 3.3.3              |
+| ORM                 | Spring Data JPA, Hibernate ORM |
+| Database            | PostgreSQL                     |
+| Frontend (optional) | React.js                       |
+| Build Tool          | Apache Maven                   |
+| Runtime             | Java 21                        |
+| Tools               | Project Lombok, Postman        |
 
 ---
 
 ## 📦 Dependencies Used
+
 The following dependencies are included in the project as per the `pom.xml`:
 
-| Dependency Group             | Artifact                          | Scope     |
-|-----------------------------|-----------------------------------|-----------|
-| org.springframework.boot    | spring-boot-starter-web           | compile   |
-| org.springframework.boot    | spring-boot-starter-data-jpa      | compile   |
-| org.springframework.boot    | spring-boot-starter-test          | test      |
-| org.postgresql              | postgresql                        | runtime   |
-| org.projectlombok           | lombok                             | optional  |
+| Dependency Group         | Artifact                     | Scope    |
+| ------------------------ | ---------------------------- | -------- |
+| org.springframework.boot | spring-boot-starter-web      | compile  |
+| org.springframework.boot | spring-boot-starter-data-jpa | compile  |
+| org.springframework.boot | spring-boot-starter-test     | test     |
+| org.postgresql           | postgresql                   | runtime  |
+| org.projectlombok        | lombok                       | optional |
 
 ---
 
 ## 🧱 System Architecture
+
 The system follows a multi-layered monolithic architecture adhering to enterprise Java best practices:
 
 1. **Presentation Layer** – REST controllers managing HTTP requests/responses.
@@ -76,6 +85,7 @@ The system follows a multi-layered monolithic architecture adhering to enterpris
 ---
 
 ## 🔗 API Specification
+
 | Endpoint                          | Method | Description               | Status Codes |
 | --------------------------------- | ------ | ------------------------- | ------------ |
 | `/api/products`                   | GET    | Retrieve all products     | 200          |
@@ -89,13 +99,16 @@ The system follows a multi-layered monolithic architecture adhering to enterpris
 ---
 
 ## 🛠 Installation
+
 ### Backend Installation with IntelliJ IDEA
+
 1. Open IntelliJ IDEA and select "Open" project.
-2. Navigate to the `SpringEcom` directory.
+2. Navigate to the `SpringEcomAI` directory.
 3. Ensure Java 21 is installed and configured.
 4. Click **Run > Run 'SpringEcomApplication'**.
 
 ### Frontend Installation With VS Code
+
 1. Navigate to the frontend folder (React.js project).
 2. Run `npm install` to install dependencies.
 3. Run `npm start` to start the development server.
@@ -103,12 +116,14 @@ The system follows a multi-layered monolithic architecture adhering to enterpris
 ---
 
 ## 📂 Folder Structure (Backend)
+
 ```plaintext
-com.telusko.springecom
+com.manav.SmartEcom
 ├── controller                # REST controllers (ProductController)
 ├── service                   # Service layer interfaces and implementations
 ├── repository                # Spring Data JPA repositories
 ├── model                     # Entity classes (Product)
 └── SpringEcomApplication     # Main application class
 ```
+
 ---
